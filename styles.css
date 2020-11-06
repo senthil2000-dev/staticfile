@@ -3,7 +3,8 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: bottom;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 .parent {
     display: flex;
@@ -14,14 +15,23 @@ body {
     height: 100vh;
 }
 
+.logoImg {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
 .logoImg img{
     width: 30vw;
+    max-height: 10%;
 }
 
 .btnContainer {
     display: flex;
     gap: 1vw;
     margin-top: 2vh;
+    position: absolute;
+    top: 55%;
 }
 
 .btnContainer button {
